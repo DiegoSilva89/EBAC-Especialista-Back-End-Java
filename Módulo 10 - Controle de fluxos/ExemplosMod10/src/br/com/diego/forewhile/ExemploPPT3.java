@@ -1,0 +1,15 @@
+package br.com.diego.forewhile;
+
+public class ExemploPPT3 {
+
+    public static void main(String args[]) {
+        for (int contador = 1; contador <= 100; contador ++) {
+
+            if (contador % 5 != 0)
+                continue;
+
+            System.out.println("Esta é a repetição nr: " + contador);
+        }
+    }
+}
+
