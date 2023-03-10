@@ -1,4 +1,4 @@
-package br.com.diego.switchcase;
+package br.com.diego;
 
 import java.util.Scanner;
 
