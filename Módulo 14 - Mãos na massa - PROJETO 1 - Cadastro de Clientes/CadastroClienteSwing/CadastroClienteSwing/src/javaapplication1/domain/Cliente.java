@@ -15,18 +15,23 @@ public class Cliente {
     
     private String nome;
     private Long cpf;
-    private Long tel;
-    private String end;
+    private String nascimento;
+    private Long telefone;
+    private Integer cep;
+    private String endereco;
     private Integer numero;
-    private String cidade;
     private String estado;
+    private String cidade;
+    
 
-    public Cliente(String nome, String cpf, String tel, String end, String num, String cidade, String estado) {
+    public Cliente(String nome, String cpf, String nascimento, String cep, String telefone, String endereco, String numero, String cidade, String estado) {
         this.nome = nome;
         this.cpf = Long.valueOf(cpf);
-        this.tel = Long.valueOf(tel);
-        this.end = end;
-        this.numero = Integer.valueOf(num);
+        this.nascimento = nascimento;
+        this.telefone = Long.valueOf(telefone);
+        this.cep = Integer.valueOf(cep);
+        this.endereco = endereco;
+        this.numero = Integer.valueOf(numero);
         this.cidade = cidade;
         this.estado = estado;
         
@@ -48,20 +53,36 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public Long getTel() {
-        return tel;
+    public String getNascimento() {
+        return nascimento;
     }
 
-    public void setTel(Long tel) {
-        this.tel = tel;
+    public void setNascimento(String nascimento) {
+        this.nascimento = nascimento;
     }
 
-    public String getEnd() {
-        return end;
+    public Long getTelefone() {
+        return telefone;
     }
 
-    public void setEnd(String end) {
-        this.end = end;
+    public void setTelefone(Long telefone) {
+        this.telefone = telefone;
+    }
+
+    public Integer getCep() {
+        return cep;
+    }
+
+    public void setCep(Integer cep) {
+        this.cep = cep;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public Integer getNumero() {
@@ -72,20 +93,20 @@ public class Cliente {
         this.numero = numero;
     }
 
-    public String getCidade() {
-        return cidade;
-    }
-
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
-    }
-
     public String getEstado() {
         return estado;
     }
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
     }
 
     @Override

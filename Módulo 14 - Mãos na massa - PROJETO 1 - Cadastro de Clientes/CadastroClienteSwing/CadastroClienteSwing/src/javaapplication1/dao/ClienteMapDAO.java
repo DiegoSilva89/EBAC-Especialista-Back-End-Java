@@ -43,9 +43,11 @@ public class ClienteMapDAO implements IClienteDAO {
     public void alterar(Cliente cliente) {
         Cliente clienteCadastrado = map.get(cliente.getCpf());
         clienteCadastrado.setNome(cliente.getNome());
-        clienteCadastrado.setTel(cliente.getTel());
+        clienteCadastrado.setCep(cliente.getCep());
+        clienteCadastrado.setNascimento(cliente.getNascimento());
+        clienteCadastrado.setTelefone(cliente.getTelefone());
         clienteCadastrado.setNumero(cliente.getNumero());
-        clienteCadastrado.setEnd(cliente.getEnd());
+        clienteCadastrado.setEndereco(cliente.getEndereco());
         clienteCadastrado.setCidade(cliente.getCidade());
         clienteCadastrado.setEstado(cliente.getEstado());
     }
